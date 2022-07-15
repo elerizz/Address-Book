@@ -74,7 +74,7 @@ input.addEventListener("input", (e) => {
           user.name.toLowerCase().includes(e.target.value.toLowerCase())
         )
         .map((user) =>
-          createCard(allContacts, user.email, user.name, user.username, user.id)
+          createCard(allContacts, user.name, user.email, user.username, user.id)
         );
     });
 });
