@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap");
+
+html {
+  padding: 0;
+}
+
+body {
+  margin: 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #3a86ff;
+  font-family: "Roboto Slab", serif;
+  /* padding: 0.5rem; */
+  align-items: center;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+nav {
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+h6 {
+  margin-left: 0.5rem;
+}
+
+p {
+  font-size: x-small;
+}
+
+input {
+  border-radius: 2rem;
+  width: 45vw;
+  height: 1rem;
+  padding: 0.7rem;
+  border: 0.1rem solid #ffbe0b;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: space-around; */
+  border-radius: 2rem;
+  gap: 0.25rem;
+}
+
+.all-contacts,
+.fav-contacts {
+  border-radius: 2rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  gap: 0.5rem;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.fav-contacts {
+  border: 0.1rem solid #fb5607;
+}
+
+.all-contacts {
+  border: 0.1rem solid #8338ec;
+}
+
+.wrapper,
+.wrapperFav {
+  display: flex;
+  height: 3.5rem;
+  border-radius: 1rem;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.wrapper :hover,
+.wrapperFav :hover {
+  transform: scale(108%);
+  transition: 0.35s;
+}
+
+.wrapperFav {
+  box-shadow: 0 2px 4px 0 #fb5607;
+}
+
+.favouriteBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.favouriteBtn .all-contacts {
+  border: solid 2px #8338ec;
+  width: 50vw;
+}
+
+footer {
+  /* position: absolute; */
+  margin-top: 2rem;;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-small;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+@media only screen and (min-width: 840px) {
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fav-contacts {
+    width: 40vw;
+  }
+
+  .all-contacts {
+    width: 50vw;
+  }
+}
